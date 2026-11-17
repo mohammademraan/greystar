@@ -1,0 +1,125 @@
+/* General Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #272727;
+    color: #d8968d;
+    position: relative;
+    justify-content: center;
+}
+
+.back-link {
+    position: absolute;
+    left: 20px;
+}
+
+.back-icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Container Styles */
+.container {
+    padding: 20px;
+}
+
+/* Subheading and Main Heading */
+.sub-heading {
+    font-size: 28px;
+    color: #d8968d;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-size: 33px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+/* Tabs Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #333;
+    color: #d8968d;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    margin: 0 10px;
+}
+
+.tab-button.active {
+    background-color: #d8968d;
+    color: #333;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Input Styles */
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background-color: #272727;
+    color: #fff;
+}
+
+/* Submit Section */
+.submit-section {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    background-color: #d8968d;
+    color: #1a1a1a;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90%;
+}
+
+.submit-btn:hover {
+    background-color: #b18f4d;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #272727;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}

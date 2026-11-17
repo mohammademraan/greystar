@@ -1,0 +1,66 @@
+/* General Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #272727;
+    color: #d2cdc3;
+    position: relative;
+    justify-content: center;
+}
+
+.back-link {
+    position: absolute;
+    left: 20px;
+}
+
+.back-icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* Subheading Styles */
+.subheading {
+    padding: 20px;
+}
+
+
+
+/* Paragraph Section */
+.paragraph-section {
+    padding: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.paragraph-section h3 {
+    font-size: 14px;
+    color: #f2ede2;
+    margin-top: 20px;
+    text-decoration-line: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #272727;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    margin-top: 20px;
+}

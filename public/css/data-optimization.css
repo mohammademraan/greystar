@@ -1,0 +1,189 @@
+/* ==========================================================================
+   Greystar Data Optimization & Lots Generation Page Styles
+   Strictly aligned with Greystar Design Tokens
+   ========================================================================== */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body, 'Newsreader', Georgia, serif);
+    color: var(--color-ink-2, #3B4E6A);
+    background-color: var(--color-bg, #FFFFFF) !important;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 24px;
+    background-color: #FFFFFF;
+    color: var(--color-ink, #0A2245);
+    justify-content: center;
+    position: relative;
+    border-bottom: 1px solid var(--color-border, #CED3DA);
+}
+
+.back-link {
+    position: absolute;
+    left: 20px;
+}
+
+.back-icon {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-ink, #0A2245);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    color: var(--color-ink, #0A2245);
+}
+
+h2 {
+    font-size: 26px;
+    margin-bottom: 12px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--color-ink-2, #3B4E6A);
+}
+
+section {
+    padding: 10px 16px;
+    margin-bottom: 24px;
+}
+
+/* Overview Section */
+.overview {
+    background-color: #FFFFFF;
+    padding: 28px 24px;
+    border-radius: var(--radius-card, 24px);
+    box-shadow: var(--shadow-card, 0 0 4px rgba(24, 25, 26, .16), 0 0 .5px rgba(24, 25, 26, .12));
+    border: 1px solid var(--color-border, #CED3DA);
+    margin: 16px auto;
+    max-width: 900px;
+}
+
+.overview .stats h3 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--color-primary, #0077D4);
+    margin: 6px 0 2px;
+}
+
+.overview .stats h4 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-ink, #0A2245);
+}
+
+/* Features Section */
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature {
+    background-color: #FFFFFF;
+    padding: 24px 20px;
+    border-radius: var(--radius-card, 24px);
+    box-shadow: var(--shadow-card, 0 0 4px rgba(24, 25, 26, .16), 0 0 .5px rgba(24, 25, 26, .12));
+    border: 1px solid var(--color-border, #CED3DA);
+    flex: 1;
+    text-align: left;
+}
+
+.feature h3 {
+    font-family: var(--font-heading, 'Manrope', sans-serif);
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-ink, #0A2245);
+    margin: 6px 0 4px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: var(--color-muted, #6A778B);
+    margin-bottom: 0;
+}
+
+/* Generate Button */
+.generate-button {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    width: 100%;
+}
+
+.generate-btn {
+    background: linear-gradient(to right, #0077D4 0%, #0077D4 50%, #00477F 100%);
+    color: #FFFFFF !important;
+    border: none;
+    padding: 16px 36px;
+    border-radius: var(--radius-pill, 9999px);
+    cursor: pointer;
+    font-family: var(--font-body, 'Newsreader', serif);
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 460px;
+    width: 90%;
+    text-align: center;
+    text-decoration: none !important;
+    box-shadow: 0 4px 16px rgba(0, 119, 212, 0.25);
+    transition: filter 0.2s ease, transform 0.15s ease;
+}
+
+.generate-btn:hover {
+    filter: brightness(0.92);
+    transform: translateY(-2px);
+    color: #FFFFFF !important;
+}
+
+/* Images Section */
+.image-gallery {
+    padding: 32px 16px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.image-gallery h2 {
+    text-align: center;
+    color: var(--color-ink, #0A2245);
+}
+
+.image-gallery p {
+    text-align: center;
+    color: var(--color-ink-2, #3B4E6A);
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.image-row img {
+    width: 100%;
+    border-radius: var(--radius-card, 24px);
+    box-shadow: var(--shadow-card);
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,89 @@
+/* General Styles */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    background-color: #1a1a1a;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #272727;
+    color: #d8968d;
+    justify-content: space-between;
+}
+
+.back-link {
+    position: absolute;
+    left: 20px;
+}
+
+.back-icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.header h1 {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.invitation-image img {
+    width: 60%;
+    margin-bottom: 20px;
+    border: 20px solid #fff; /* White border */
+    border-radius: 30px; /* 30px radius */
+}
+
+h2 {
+    color: #d8968d;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.invitation-code-container {
+    background-color: #272727;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+#invitation-code {
+    font-size: 24px;
+    color: #d8968d;
+}
+
+.copy-btn {
+    background-color: #d8968d;
+    color: #1a1a1a;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.copy-btn:hover {
+    background-color: #b18f4d;
+}
+
+.footer {
+    background-color: #272727;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}

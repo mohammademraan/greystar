@@ -1,0 +1,174 @@
+/* Simple independent hero page for index.blade.php */
+:root{
+  --accent-1: #078586;
+  --accent-2: #59B1BC;
+  --bg-overlay: rgba(3,34,34,0.45);
+  --box-bg: rgba(255,255,255,0.96);
+  --text: #123;
+  --muted: #546;
+  --radius: 14px;
+  --shadow: 0 16px 40px rgba(3,133,134,0.12);
+  font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+.bg-video{
+  position:fixed;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:-2;
+  filter: contrast(1.02) saturate(1.05);
+}
+
+.bg-overlay{
+  position:fixed;
+  inset:0;
+  background:var(--bg-overlay);
+  z-index:-1;
+}
+
+/* Centering container */
+.center-wrap{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+/* Box */
+/* Glassy / transparent welcome box (replaces previous .welcome-box) */
+.welcome-box{
+  width:100%;
+  max-width:780px;
+  /* subtle translucent glass */
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border-radius:var(--radius);
+  border: 1px solid rgba(255,255,255,0.12); /* soft light border */
+  box-shadow: 0 10px 40px rgba(2,8,15,0.55); /* darker shadow for contrast over video */
+  padding:42px 36px;
+  text-align:center;
+  backdrop-filter: blur(8px) saturate(1.1);
+  -webkit-backdrop-filter: blur(8px) saturate(1.1);
+  color: #ffffff; /* prominent white text */
+}
+
+/* Logo - keep as-is but ensure good contrast on video */
+.welcome-box .logo{
+  height:74px;
+  max-width:220px;
+  object-fit:contain;
+  margin-bottom:18px;
+  filter: drop-shadow(0 6px 18px rgba(0,0,0,0.45));
+}
+
+/* Heading & text - make prominent over video */
+.welcome-box h1{
+  color:#ffffff;
+  font-size:2.1rem;
+  margin-bottom:12px;
+  font-weight:700;
+  line-height:1.05;
+  text-shadow: 0 6px 22px rgba(3,133,134,0.20);
+}
+
+.welcome-box .lead{
+  color: rgba(255,255,255,0.95);
+  font-size:1.05rem;
+  margin-bottom:24px;
+  max-width:680px;
+  margin-left:auto;
+  margin-right:auto;
+  line-height:1.6;
+  text-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+/* CTA - make a glass CTA with accent outline */
+.cta-btn{
+  display:inline-block;
+  width:min(420px,78%);
+  padding:14px 20px;
+  background: linear-gradient(90deg, rgba(7,133,134,0.95) 30%, rgba(89,177,188,0.95) 100%);
+  color:#fff;
+  font-weight:700;
+  text-decoration:none;
+  border-radius:999px;
+  box-shadow:0 12px 34px rgba(7,133,134,0.20);
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: transform .12s ease, box-shadow .12s ease, opacity .12s ease;
+}
+
+.cta-btn:hover{
+  transform:translateY(-4px);
+  box-shadow:0 20px 48px rgba(7,133,134,0.28);
+  opacity: 0.98;
+}
+
+/* Responsive */
+@media (max-width:720px){
+  .welcome-box{padding:28px 18px;border-radius:12px}
+  .welcome-box h1{font-size:1.5rem}
+  .welcome-box .lead{font-size:0.98rem}
+  .welcome-box .logo{height:60px}
+  .cta-btn{width:86%}
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* White text for better contrast */
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.central-block {
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #d8968d; /* Main color for headings */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #d8968d; /* Main color for buttons */
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

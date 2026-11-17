@@ -1,0 +1,54 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #1c1c1c;
+    color: #d8968d;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #000;
+    border-bottom: 1px solid #d8968d;
+}
+
+.header h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d8968d;
+    margin: 0;
+    text-align: center; /* Center the text */
+}
+
+.header .back-link {
+    position: absolute; /* Move the back link outside the flexbox flow */
+    left: 20px; /* Adjust this based on your padding */
+}
+
+.back-icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.plan img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    border: 2px solid #d8968d;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    border-top: 1px solid #d8968d;
+    color: #d8968d;
+}
